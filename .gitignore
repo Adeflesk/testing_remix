@@ -1,0 +1,6 @@
+node_modules
+/prima/dev.db
+/.cache
+/build
+/public/build
+.env
