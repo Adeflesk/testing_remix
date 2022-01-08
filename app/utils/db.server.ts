@@ -12,10 +12,10 @@ if(process.env.NODE_ENV ==='production'){
 
 } else {
     if(!global._db){
-        global._db = new PrismaClient()
+        global.__db = new PrismaClient()
         global.__db.$connect()
     }
-    db = global._db
+    db = global.__db
 }
 
-export  {db}
+export  {db} 
